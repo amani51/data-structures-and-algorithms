@@ -133,6 +133,11 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let subArr= arr.filter(item =>{
+    let x = /^[A-J]/
+    return (x.test(item))
+  })
+  return subArr
 };
 
 /* ------------------------------------------------------------------------------------------------
