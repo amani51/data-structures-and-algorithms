@@ -134,7 +134,7 @@ const createList = (availableItems) => {
   // Solution code here...
   let newArr=[];
   availableItems.forEach(element => {
-    if (element.available==true){
+    if (element.available){
       newArr.push(element.name);
     }
 
